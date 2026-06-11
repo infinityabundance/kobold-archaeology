@@ -2,13 +2,13 @@
 name = "kobold-archaeology"
 version = "0.1.0"
 edition = "2021"
-description = "Public/private corpus archaeology engine: dataset registry, feature-terrain scanner, copybook/program feature extraction, gap boards, and dataset-to-court mapping."
+description = "Corpus archaeology: a public/private COBOL dataset registry, a surface-frequency gap board, and a generalized COBOL feature-terrain scanner that maps real code against the court board."
 authors = ["infinityabundance"]
 license = "Apache-2.0"
 repository = "https://github.com/infinityabundance/kobold-archaeology"
 readme = "README.md"
-publish = false  # empty scaffold; flip to publishable once the implementation lands
+publish = false
 
 [dependencies]
-# Dependency rule: kobold-* MAY depend on gnucobol-rs; gnucobol-rs MUST NOT depend on kobold-*.
-# Activate when the implementation is extracted, e.g.: gnucobol-rs = "0.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

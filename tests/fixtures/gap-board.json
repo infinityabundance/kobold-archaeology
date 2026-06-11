@@ -1,0 +1,10 @@
+{
+  "schema": "kobold-gap-board-v1",
+  "files_scanned": 1200,
+  "surfaces": [
+    { "surface": "MOVE", "occurrences": 9000, "status": "sealed", "court": "GNURUST.2" },
+    { "surface": "ACCEPT/DISPLAY", "occurrences": 5951, "status": "sealed", "court": "GNURUST.ACCEPT.DISPLAY.1" },
+    { "surface": "CALL/linkage", "occurrences": 4200, "status": "missing", "court": "" },
+    { "surface": "ALTER", "occurrences": 12, "status": "missing", "court": "" }
+  ]
+}

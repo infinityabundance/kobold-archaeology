@@ -1,0 +1,11 @@
+{
+  "schema": "kobold-corpus-index-v1",
+  "doctrine": "Map the public COBOL ecosystem; prioritize the sharpest oracle terrain.",
+  "corpora": [
+    { "id": "upstream-testsuite", "name": "reference testsuite", "url": "ref", "tier": 1, "priority": 1,
+      "features": ["sequential", "file-status", "intrinsics"], "note": "source of truth", "license": "GPL", "status": "indexed" },
+    { "id": "community-samples", "name": "community programs", "url": "ref2", "tier": 2, "priority": 5,
+      "features": ["accept-display", "perform"], "note": "varied", "license": "various", "status": "indexed" }
+  ],
+  "best_first_10": ["upstream-testsuite"]
+}

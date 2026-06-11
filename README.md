@@ -6,6 +6,21 @@ Public/private corpus archaeology engine: dataset registry, feature-terrain scan
 codebases, generated oracle witnesses, compiler-profile behavior, and migration risk into court-backed
 receipts. Independently-authored tooling; contains no GnuCOBOL source.
 
+## What it does (v0.1)
+- `CorpusIndex` / `Corpus` -- load + query a public/private dataset registry (`by_tier`), null-tolerant.
+- `GapBoard` / `Surface` -- load + query a surface gap board (`with_status`, `missing_hottest`).
+- `scan(text, default_surfaces())` -- a generalized, word-boundary-aware COBOL feature-terrain scanner
+  (no regex; built-in surface vocabulary; extend per estate).
+- CLI: `kobold-archaeology corpus|gap|scan <path>...`.
+
+```
+cargo run -- corpus path/to/public-corpus-index.json
+cargo run -- gap    path/to/public-gap-board.json
+cargo run -- scan   prog1.cob prog2.cob
+```
+
+Roadmap: copybook/program feature extraction, dataset->court mapping, terrain diffing across estates.
+
 ## Architecture
 - gnucobol-rs (separate crate) = the oracle-proven semantic primitive layer.
 - kobold-* = the forensic-intelligence layer.
@@ -13,6 +28,3 @@ receipts. Independently-authored tooling; contains no GnuCOBOL source.
 
 ## License
 Apache-2.0 (see LICENSE).
-
-## Status
-Scaffold only -- local repo initialized, no implementation extracted yet, not pushed, not published.
