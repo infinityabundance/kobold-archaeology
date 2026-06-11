@@ -1,0 +1,15 @@
+//! # kobold-archaeology
+//!
+//! Public/private corpus archaeology engine: dataset registry, feature-terrain scanner, copybook/program feature extraction, gap boards, and dataset-to-court mapping.
+//!
+//! Part of the KOBOLD ecosystem -- independently-authored forensic tooling. Apache-2.0. This crate
+//! contains no GnuCOBOL/libcob source; any interaction with COBOL semantics goes through the separate
+//! gnucobol-rs crate.
+//!
+//! Architecture: kobold-* MAY depend on gnucobol-rs; gnucobol-rs MUST NOT depend on kobold-*.
+//!
+//! Status: SCAFFOLD. Implementation extracted from the gnucobol-rs lab tooling + lineage engine later.
+#![forbid(unsafe_code)]
+
+/// Crate scaffold marker; replace with the real public API as the implementation lands.
+pub const KOBOLD_CRATE: &str = "kobold-archaeology";
